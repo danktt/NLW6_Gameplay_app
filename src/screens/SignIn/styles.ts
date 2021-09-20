@@ -15,8 +15,9 @@ export const styles = StyleSheet.create({
    content: {
     marginTop: -40,
     paddingHorizontal: 50,
-   },
-   title: {
+  },
+  title: {
+     fontFamily: 'Rajdhani_700Bold',
      color: theme.colors.heading,
      textAlign: 'center',
      fontSize: 40,

@@ -30,7 +30,7 @@ export function ButtonIcon({title, ...res} : Props) {
       </View>
 
       <Text style={styles.title}>
-        {title}
+        { title }
       </Text>
     </TouchableOpacity>
   )
