@@ -6,9 +6,8 @@ import { styles } from "./styles"
 
 type Props = {
   children: ReactNode;
+
 }
-
-
 
 export function Background({children}: Props) {
   const {secondary80, secondary100} = theme.colors

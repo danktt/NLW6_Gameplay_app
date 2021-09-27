@@ -4,33 +4,30 @@ import { Rajdhani_500Medium, Rajdhani_700Bold } from "@expo-google-fonts/rajdhan
 import AppLoading from "expo-app-loading";
 import { useFonts } from "expo-font";
 
-import { Home } from "./src/screens/Home";
 import { StatusBar } from "react-native";
 import { Background } from "./src/components/Background";
+import { Routes } from "./src/routes";
 
-
-
-export default function App(){
-  const [fontsLoaded] =useFonts({
+export default function App() {
+  const [fontsLoaded] = useFonts({
     Inter_400Regular,
     Inter_500Medium,
     Rajdhani_500Medium,
-    Rajdhani_700Bold
+    Rajdhani_700Bold,
   });
 
-  if(!fontsLoaded){
-   return <AppLoading />
+  if (!fontsLoaded) {
+    return <AppLoading />;
   }
 
-
-  return(
+  return (
     <Background>
-    <StatusBar 
-      barStyle="light-content"
-      backgroundColor="transparent"
-      translucent
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="transparent"
+        translucent
       />
-    <Home />
+      <Routes />
     </Background>
-  )
+  );
 }
