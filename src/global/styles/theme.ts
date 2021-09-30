@@ -1,3 +1,6 @@
+
+
+
 export const theme = {
   colors: {
     primary: '#E51C44',
@@ -16,6 +19,7 @@ export const theme = {
     heading: '#DDE3F0',
     line: '#991F36',
     on: '#32BD50',
+
   },
 
   fonts: {
