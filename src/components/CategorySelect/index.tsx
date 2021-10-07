@@ -7,7 +7,7 @@ import Category from '../Category';
 import { styles } from './styles';
 
 type Props = {
-  categorySelected : string,
+  categorySelected : string;
 }
 
 const CategorySelect: React.FC<Props> = ({categorySelected}) => {
